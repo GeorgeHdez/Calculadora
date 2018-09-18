@@ -11,7 +11,7 @@ import java.nio.CharBuffer;
 
 public class DecimalActivity extends AppCompatActivity {
 
-    Button b_0,b_1,b_2,b_3,b_4,b_5,b_6,b_7,b_8,b_9,b_c,b_p,b_pls,b_less,b_mul,b_div,b_bin;
+    Button b_0,b_1,b_2,b_3,b_4,b_5,b_6,b_7,b_8,b_9,b_c,b_p,b_pls,b_less,b_mul,b_div,b_bin,b_oct,b_hex;
     String cuenta = "";
     TextView display;
     @Override
@@ -37,6 +37,8 @@ public class DecimalActivity extends AppCompatActivity {
         b_mul = (Button)findViewById(R.id.button_mul);
 
         b_bin = (Button)findViewById(R.id.button_BIN);
+        b_oct = (Button)findViewById(R.id.button_OCT);
+        b_hex = (Button)findViewById(R.id.button_HEX);
 
         display = (TextView)findViewById(R.id.textView);
 
@@ -147,6 +149,14 @@ public class DecimalActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        b_oct.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DecimalActivity.this,OctalActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }

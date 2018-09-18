@@ -37,6 +37,7 @@ public class BinaryActivity extends AppCompatActivity {
                 //Intent intent = new Intent(BinaryActivity.this,DecimalActivity.class);
                 //startActivity(intent);
                 finish();
+
             }
         });
 
