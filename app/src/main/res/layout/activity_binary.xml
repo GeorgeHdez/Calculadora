@@ -4,20 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DecimalActivity">
+    tools:context=".BinaryActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="156dp"
-        android:layout_marginTop="8dp"
-        android:background="#4a2771e8"
-        android:textColor="@android:color/background_dark"
-        android:textSize="30sp"
+    <TableRow
+        android:layout_width="393dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/button_DEC"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="DEC"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="132dp" />
+
+        <Button
+            android:id="@+id/button_BIN"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="BIN"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="132dp" />
+
+        <Button
+            android:id="@+id/button_OCT"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="OCT"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="132dp" />
+
+        <Button
+            android:id="@+id/button_HEX"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="HEX"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="132dp" />
+    </TableRow>
 
     <TableLayout
         android:id="@+id/tableLayout"
@@ -37,7 +64,9 @@
                 android:id="@+id/button_7"
                 android:layout_width="82dp"
                 android:layout_height="82dp"
+                android:clickable="false"
                 android:text="7"
+                android:textColor="@android:color/darker_gray"
                 android:textSize="30sp"
                 tools:layout_editor_absoluteX="62dp"
                 tools:layout_editor_absoluteY="133dp" />
@@ -47,6 +76,8 @@
                 android:layout_width="82dp"
                 android:layout_height="82dp"
                 android:text="8"
+                android:clickable="false"
+                android:textColor="@android:color/darker_gray"
                 android:textSize="30sp"
                 tools:layout_editor_absoluteX="62dp"
                 tools:layout_editor_absoluteY="133dp" />
@@ -56,6 +87,8 @@
                 android:layout_width="82dp"
                 android:layout_height="82dp"
                 android:text="9"
+                android:clickable="false"
+                android:textColor="@android:color/darker_gray"
                 android:textSize="30sp"
                 tools:layout_editor_absoluteX="62dp"
                 tools:layout_editor_absoluteY="133dp" />
@@ -65,6 +98,8 @@
                 android:layout_width="82dp"
                 android:layout_height="82dp"
                 android:text="C"
+                android:clickable="false"
+                android:textColor="@android:color/darker_gray"
                 android:textSize="30sp"
                 tools:layout_editor_absoluteX="62dp"
                 tools:layout_editor_absoluteY="133dp" />
@@ -74,6 +109,8 @@
                 android:layout_width="82dp"
                 android:layout_height="82dp"
                 android:text="!"
+                android:clickable="false"
+                android:textColor="@android:color/darker_gray"
                 android:textSize="30sp"
                 tools:layout_editor_absoluteX="62dp"
                 tools:layout_editor_absoluteY="133dp" />
@@ -88,6 +125,8 @@
                 android:layout_width="82dp"
                 android:layout_height="82dp"
                 android:text="4"
+                android:clickable="false"
+                android:textColor="@android:color/darker_gray"
                 android:textSize="30sp"
                 tools:layout_editor_absoluteX="62dp"
                 tools:layout_editor_absoluteY="133dp" />
@@ -97,6 +136,8 @@
                 android:layout_width="82dp"
                 android:layout_height="82dp"
                 android:text="5"
+                android:clickable="false"
+                android:textColor="@android:color/darker_gray"
                 android:textSize="30sp"
                 tools:layout_editor_absoluteX="62dp"
                 tools:layout_editor_absoluteY="133dp" />
@@ -106,6 +147,8 @@
                 android:layout_width="82dp"
                 android:layout_height="82dp"
                 android:text="6"
+                android:clickable="false"
+                android:textColor="@android:color/darker_gray"
                 android:textSize="30sp"
                 tools:layout_editor_absoluteX="62dp"
                 tools:layout_editor_absoluteY="133dp" />
@@ -147,6 +190,8 @@
                 android:layout_width="82dp"
                 android:layout_height="82dp"
                 android:text="2"
+                android:clickable="false"
+                android:textColor="@android:color/darker_gray"
                 android:textSize="30sp"
                 tools:layout_editor_absoluteX="62dp"
                 tools:layout_editor_absoluteY="133dp" />
@@ -156,6 +201,8 @@
                 android:layout_width="82dp"
                 android:layout_height="82dp"
                 android:text="3"
+                android:clickable="false"
+                android:textColor="@android:color/darker_gray"
                 android:textSize="30sp"
                 tools:layout_editor_absoluteX="62dp"
                 tools:layout_editor_absoluteY="133dp" />
@@ -178,13 +225,6 @@
                 tools:layout_editor_absoluteX="62dp"
                 tools:layout_editor_absoluteY="133dp" />
 
-            <Button
-                android:id="@+id/button24"
-                android:layout_width="82dp"
-                android:layout_height="82dp"
-                android:text="Button"
-                tools:layout_editor_absoluteX="62dp"
-                tools:layout_editor_absoluteY="133dp" />
         </TableRow>
 
         <TableRow
@@ -231,44 +271,17 @@
         </TableRow>
     </TableLayout>
 
-    <TableRow
-        android:layout_width="393dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="156dp"
+        android:layout_marginTop="8dp"
+        android:background="#4a2771e8"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <Button
-            android:id="@+id/button_DEC"
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:text="DEC"
-            tools:layout_editor_absoluteX="42dp"
-            tools:layout_editor_absoluteY="132dp" />
-
-        <Button
-            android:id="@+id/button_BIN"
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:text="BIN"
-            tools:layout_editor_absoluteX="42dp"
-            tools:layout_editor_absoluteY="132dp" />
-
-        <Button
-            android:id="@+id/button_OCT"
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:text="OCT"
-            tools:layout_editor_absoluteX="42dp"
-            tools:layout_editor_absoluteY="132dp" />
-
-        <Button
-            android:id="@+id/button_HEX"
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:text="HEX"
-            tools:layout_editor_absoluteX="42dp"
-            tools:layout_editor_absoluteY="132dp" />
-    </TableRow>
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

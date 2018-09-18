@@ -1,5 +1,6 @@
 package com.example.george_pc.calculadora;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -135,6 +136,15 @@ public class DecimalActivity extends AppCompatActivity {
             public void onClick(View v) {
                 cuenta = cuenta + "/";
                 display.setText(cuenta);
+            }
+        });
+
+
+        b_bin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DecimalActivity.this,BinaryActivity.class);
+                startActivity(intent);
             }
         });
 
